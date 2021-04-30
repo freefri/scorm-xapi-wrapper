@@ -13,6 +13,7 @@ const initializeAttempt = function () {
     const oldRetrieveDataValue = window.retrieveDataValue // from APIWrapper.js
     window.retrieveDataValue = function (name) {
         if (name === 'cmi.launch_data') {
+            const host = document.location.protocol + "//" + document.location.host + document.location.pathname;
             // faking cmi launch_data when get LRS config from SCORMToXAPIFunctions.js
             return JSON.stringify({
                 lrs:{
@@ -20,10 +21,10 @@ const initializeAttempt = function () {
                     user: "",
                     password: ""
                 },
-                courseId: "http://example.com/courses/roses",
-                lmsHomePage: window.location.protocol + '//' + window.location.host,
+                courseId: host + document.location.pathname,
+                lmsHomePage: host,
                 isScorm2004: isScorm2004,
-                activityId: "http://example.com/courses/roses/introduction",
+                activityId: host + document.location.pathname + "/activityXXyyZZ",
                 groupingContextActivity: {
                     definition: {
                         name: {
