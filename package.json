@@ -1,0 +1,11 @@
+{
+    "name": "scorm-xapi-wrapper",
+    "version": "0.1.0",
+    "description": "A scorm RTE with xapi LMS tracking",
+    "license": "MIT",
+    "private": false,
+    "repository": "git@github.com:freefri/scorm-xapi-wrapper.git",
+    "dependencies": {
+        "simplify-scorm": "0.0.1"
+    }
+}
