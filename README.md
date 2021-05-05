@@ -1,4 +1,7 @@
 # scorm-xapi-wrapper
+
+Small demo integrating some other repositories
+
 Usefull links:
 
 - https://github.com/gabrieldoty/simplify-scorm
